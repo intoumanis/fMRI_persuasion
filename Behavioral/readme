@@ -1,0 +1,3 @@
+The "behavioral_analysis.R" performs the main statistical analysis of the behavioral data, which can be found in "Dataset.csv".
+
+The "control_analysis.R" is related to Table 2 and basically supports the statement that the observed effects are specific to persuasion. This script takes variables from the folders "movements" and "traits".
