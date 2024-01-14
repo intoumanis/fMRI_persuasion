@@ -1,0 +1,3 @@
+For ISC and ISFC analysis, only the "fMRI analysis.ipynb" jupyter notebook is needed. This script uses the "deltas.csv", which contains the ΔWTP for sugar-containing and sugar-free products per participant. This information is used in the in order to split participants into two groups: persuaded and not persuaded.
+
+For the GLM analysis, the "GLM_first level.sh" and "glm_1st_level.py" can run together on a computer cluster to generate the beta maps. These maps can then be imported in the "GLM_2nd_level_ROI.ipynb". Finally, the results of the 2nd level analysis, can be imported in "roi_visualization.R" for statistics and visualization.
