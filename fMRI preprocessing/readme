@@ -1,0 +1,11 @@
+First, install the dcm2niix by rinning "install_dcm2niix.sh". This will create a folder in the working directory.
+
+Then, the preprocessing steps can run in order:
+1. We convert the DICOM files to nifti files and save in BIDS format
+2. Add some information about the study so that the BIDS directory is valid
+3. We extract events of the experiment from the psychopy logs. Events of interest are the onset of the healthy eating call and the presentation of products
+4. We preprocess the structural and functional MRI data with fMRI prep
+5. We apply additional cleaning of the data, since fMRIprep only applies "minimal preprocessing"
+6. We check whether some participants moved their heads too much during scanner, so that we can exclude them
+7. We crop the clean BOLD signal according to the period of the healthy eating call for each participant
+8. We average the cropped clean BOLD signal within the ROIs of the AAL3 and save in excel/csv files
